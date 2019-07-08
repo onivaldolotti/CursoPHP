@@ -1,0 +1,9 @@
+Nessa aula, aprendemos:
+
+-Uma variável guarda um valor
+-Uma variável tem um $ na frente e para atribuir um valor usamos =
+-O nome da variável não deve usar caracteres especiais
+-Para imprimir o valor de uma variável também usamos o comando echo
+-PHP possui tipos de dados como integer, double, string ou boolean (tipos primitivos)
+-PHP descobre os tipos de variáveis dinamicamente (tipagem dinâmica)
+-Utilizando gettype conseguimos descobrir o tipo de uma variável
