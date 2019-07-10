@@ -1,0 +1,14 @@
+Nessa aula, aprendemos como criar uma estrutura de dados mais complexa usando e combinando arrays associativos. Vimos e aprendemos que:
+
+-um array associativo sempre define elementos composto por uma chave e um valor
+	-a associação entre chave e valor é feito com =>
+	-a chave funciona como um índice explicito (definido por nós)
+	-o valor pode ser um valor primitivo ou outro array
+	-a chave deve ser do tipo inteiro ou string, todos os outros tipos o PHP tenta converter
+-um array associativo também é chamado de mapa ou dicionário
+-podemos combinar um array simples e array associativo para definir estruturas mais complexas
+-o laço foreach oferece uma forma mais expressiva de iteração
+	-no foreach podemos acessar o índice e o valor do elemento da iteração
+-arrays podem crescer e podemos adicionar novos elementos
+-em arrays simples, com índice numérico, basta usar [] para adicionar um elemento no final (por exemplo, $lista[] = 12;)
+	-nesse caso o PHP automaticamente incrementa o índice
