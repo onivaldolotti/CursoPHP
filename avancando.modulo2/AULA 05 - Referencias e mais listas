@@ -1,0 +1,10 @@
+-Nessa aula aprendemos sobre a passagem do parâmetro por valor ou por referência. O padrão do PHP é passar o parâmetro por valor, isto é fazer uma cópia do parâmetro. Quando usamos a passagem por referência temos acesso aos valores da variável original, pois passamos a referência apenas (não é feito nenhuma cópia).
+
+-Para usar a passagem de referência basta colocar o caracter & na frente da variável.
+
+-Voltamos a falar também sobre listas e como pegar vários elementos de uma vez, só usando a função list(..):
+
+	$idadeList = [21, 23, 19, 25, 30, 41, 18];
+	list($idadeVinicius, $idadeJoao, $idadeMaria) = $idadeList;
+
+-Além disso, podemos remover um elemento usando a função unset(..).
