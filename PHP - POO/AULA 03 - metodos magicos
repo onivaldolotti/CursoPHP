@@ -1,0 +1,13 @@
+public function __get($atributo)
+{
+return $this->$atributo;
+}
+
+public function __set($atributo, $valor) - protegendo atributos e jogando uma excecao.
+{
+	if($atributo=="titular" || $atributo == "saldo"){
+		throw new Exception("Atributo privado");
+	}else{
+		$this->$atributo = $valor;
+	}
+}
