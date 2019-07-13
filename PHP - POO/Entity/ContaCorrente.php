@@ -30,6 +30,17 @@ class ContaCorrente{
 		return $this;
 	}
 
+	public function transferir($valor,ContaCorrente $conta)
+	{
+		if (!is_numeric($valor)) {
+			echo "O valor passado nao e numerico";
+			exit;
+		}
+		$this->sacar($valor);
+		$conta->depositar($valor);
+		return $this;
+	}
+
 	// public function getTitular()
 	// {
 	// 	return $this->titular;
@@ -52,10 +63,24 @@ class ContaCorrente{
 
 	public function __set($atributo, $valor)
 	{
+		$this-> protegeAtributo($atributo);
+		$this->$atributo = $valor;
+	}
+
+	private function protegeAtributo($atributo)
+	{
 		if($atributo=="titular" || $atributo == "saldo"){
 			throw new Exception("Atributo privado");
-		}else{
-			$this->$atributo = $valor;
 		}
+	}
+
+	private function formataSaldo()
+	{
+		return "R$ ".number_format($this->saldo,2,",",".");
+	}
+
+	public function getSaldo()
+	{
+		return $this->formataSaldo();
 	}
 }

@@ -1,0 +1,13 @@
+-linguagem fracamente tipada
+
+-colocar os tipos nos metodos
+
+-nova classe cria um novo tipo ex: ContaCorrente
+
+-criar verificacoes para contornar a tipagem fraca.
+	if (!is_numeric($valor)) {
+		echo "O valor passado nao e numerico";
+		exit;
+	}
+
+-para parâmetro do método tipos Int, String, Float e Double, a tipagem só funciona a partir da versão 7 do php.

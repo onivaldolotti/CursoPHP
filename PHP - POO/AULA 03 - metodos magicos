@@ -11,3 +11,13 @@ public function __set($atributo, $valor) - protegendo atributos e jogando uma ex
 		$this->$atributo = $valor;
 	}
 }
+
+Acesso os metodos magicos no momento em que, com o objeto criado, acesso diretamente atributo para leitura ou escrita;
+
+<?php
+
+require_once "ContaCorrente.php";
+
+$contaCorrenteJoao = new ContaCorrente("5199","163212");
+echo $contaCorrenteJoao->titular;
+echo $contaCorrenteJoao->saldo = 500.00;

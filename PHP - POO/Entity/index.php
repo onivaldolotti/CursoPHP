@@ -12,5 +12,9 @@ $contaJoao -> sacar(400.90)-> depositar(100);
 
 // echo $contaJoao->titular = "Rubao";
 
+echo $contaJoao->getSaldo();
+
+$contaCorrenteJoao->transferir(20.00,$contaCorrenteJose);
+
 var_dump($contaJoao);
 var_dump($contaMaria);
