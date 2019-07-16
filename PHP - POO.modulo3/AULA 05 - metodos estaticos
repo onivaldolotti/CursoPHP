@@ -1,0 +1,12 @@
+nao e necessario carregar a classe inteira
+Criar o método público, para que outras partes do código o acessem, adicionar a palavra static (declarando que o método é estático), e por fim invocar através de “::”;
+
+class Validacao{
+    public static function validar($atributo){
+        if($atributo == "titular" || $atributo == "saldo"){
+            throw new Exception("O atributo $atributo continua privado ");
+        }
+    }
+}
+//Utilização
+Validacao::validar($atributo);

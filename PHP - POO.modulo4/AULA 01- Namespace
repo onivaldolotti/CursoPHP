@@ -1,0 +1,11 @@
+-usamos a funcao load passando namespace como parametro para automaticamente chamar as classe necessarias.
+
+-tbm usamos o comando: spl_autoload_register(__NAMESPACE__."\load");
+
+-com isso retornamos o caminho absoluto para o diretorio do nosso projeto.
+
+-classes com mesmo nome em diretorios diferente colocar "as". EX: use classe\Diretor as Teste
+
+Configurar autoload;
+Utilizar namespace nas classes;
+Definir alias para classes com mesmo nome.
