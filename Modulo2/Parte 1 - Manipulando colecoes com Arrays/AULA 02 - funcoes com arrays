@@ -1,0 +1,27 @@
+-----------------------------------------Funcao explode------------------------------------------
+Ela divide a string em um array
+
+explode (", ", $nomes);
+
+explode (",<-a virgula seria o delimitador na funcao explode", "segundo argumento uma variavel populada") - onde ela encontrar o delimitador ela corta a string e gera um array
+
+Exemplo:
+
+$nomes = "Giovani, Raul, Paulo";
+
+$array_nomes = explode (", ", $nomes);
+
+foreach ($array_nomes as $nome) {
+	echo "Ola $nome";
+}
+
+-----------------------------------Funcao implode------------------------------------------
+Ela transforma um array em uma string
+
+e o inverso de explode.
+
+Nesta aula, aprendemos:
+
+-Como ordenar um array.
+-Como iterar sobre um array usando foreach.
+-Transformar string em array e vice-versa.

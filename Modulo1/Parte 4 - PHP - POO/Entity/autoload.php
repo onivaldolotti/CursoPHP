@@ -4,7 +4,7 @@ function load($namespace)
 {
 	$namespace = str_replace("\\","/",$namespace);
 
-	$caminhoAbsoluto ="C:\Users\Denivas\CursoPHP\PHP - POO.modulo4"."/".$namespace.".php";
+	$caminhoAbsoluto ="C:\Users\Denivas\CursoPHP\Modulo1\Parte 4 - PHP - POO"."/".$namespace.".php";
 
 	return include_once $caminhoAbsoluto;
 }
