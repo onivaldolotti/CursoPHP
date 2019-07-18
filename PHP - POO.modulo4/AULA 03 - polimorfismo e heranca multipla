@@ -1,0 +1,5 @@
+sobreescrita - escrever o mesmo metodo com o mesmo nome na classe filha para alterar seu comportamento.
+
+assim como no java php nao tem herança multipla, mas sim uma classe herda de outra, q herda de outra, fazendo um efeito em cascata
+
+-Uma classe pode herdar apenas de uma classe por vez, então sempre que for iniciar o desenvolvimento de algo, organize seus pensamentos e se possível, crie antes um diagrama de classes para lhe auxiliar na melhor arquitetura para seu projeto.

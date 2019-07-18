@@ -1,0 +1,3 @@
+metodos finais nao podem ser sobrescritos, criamos metodos finais adicionando a palavra final no inicio do metodo;
+
+Aviso: o passo a passo desse vídeo (a sobrecarga de construtores) só funciona até a versão 7.0 do PHP! Nas versões mais recentes, a omissão de argumentos no construtor gera um FATAL ERROR!

@@ -1,0 +1,5 @@
+throw new \Exception - barra antes para identificar a excecao no php
+
+classes abstratas nao pode ser instanciadas
+
+interfaces podem ter apenas assinatura de métodos públicos, caso precise alterar o encapsulamento de um método, utilize classes abstratas

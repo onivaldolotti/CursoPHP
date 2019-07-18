@@ -1,5 +1,9 @@
 -O que é herança;
-
+	- as classes filhas herdam atributos e metodos da classe mae;
+	-  sempre que identificarmos um comportamento semelhante entre as classes, garanta o reaproveitamento do código, defina a responsabilidade de cada classe e separe seus conteúdos.
+	
 -Como herdar atributos e métodos de uma classe;
+	- atravez da palavra chave extends
 
 -Como proteger seus atributos e métodos.
+	-modificador de acesso protected.
