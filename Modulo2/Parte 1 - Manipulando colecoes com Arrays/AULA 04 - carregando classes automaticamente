@@ -1,0 +1,15 @@
+PSR -4
+
+PHP standard recomendations
+
+O autoload reduz o nosso código, pois fazemos o autoloading de classes uma vez e seguimos uma convenção, enquanto seria necessário fazermos um require por classe.
+O autoload em si só é suficiente, no máximo, utilizamos um require para o próprio autoloader.
+
+O namespace nos permite separar classes com o mesmo nome, evitando conflito.
+O namespace evita colisões de nomes de classe em um mesmo projeto atribuindo a ela um nome que funciona como separador.
+
+Nesta aula, aprendemos:
+
+-Como implementar um autoloader.
+-O que é o padrão PSR-4
+-Como utilizar namespaces.

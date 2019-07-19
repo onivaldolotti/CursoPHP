@@ -1,0 +1,21 @@
+removemos atraves da funcao unset passando a posicao do elemento dentro do array
+------------------------------------------------------------------------------------------
+type juggling - O PHP tenta converter os tipos de dados de uma variável quando encontra alguma incompatibilidade ao invés de dar erro, O type juggling faz um casting automático e evita parar o programa e dar erro.
+
+quando nao acha o elemento no array o type juggling retorna false
+
+is_int para contornar esse erro de type juggling.
+--------------------------------------------------------------------------------------------------------------
+
+array_search nao faz busca estrita, ele tenta contornar os tipos transformando a busca de string e int.
+
+para evitar isso no php passando uma 3 condicao no array_search, q e true, sendo assim ele busca pelo elemento e seu tipo.
+-------------------------------------------------------------------------------------------------
+usando <?php declare(strict_types=1);
+impedimos o casting automatico de um tipo em outro na passagem de elementos no parametro.
+
+Nesta aula, aprendemos:
+
+-A remover um elemento de um array.
+-Como funciona a tipagem estrita do PHP.
+-Como lidar com a conversão automática de tipos.

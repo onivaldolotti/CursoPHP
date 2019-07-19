@@ -1,0 +1,21 @@
+array_diff -----------------
+Separa os elementos diferentes dentro de 2 array_search
+
+array_merge--------------------------
+Adiciona um array no final do outro array, formando um novo
+
+array_combine---------------------------------
+cria um array associativo usando as strings como chave -"map"
+
+array_key_exists--------------------------
+verifica as chaves em uma array associativo
+
+
+Utilizando o foreach ($nomes_saldos as $nome => $saldo).
+Essa é a sintaxe correta do foreach com um array associativo.
+
+Nesta aula, aprendemos:
+
+-Usar arrays associativos (também chamados de maps)
+-Iterar sobre um array associativo
+-Adicionar e remover de um array associativo
