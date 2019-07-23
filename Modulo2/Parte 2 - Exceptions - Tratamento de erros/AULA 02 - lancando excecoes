@@ -1,0 +1,1 @@
+Sempre que receber uma Exception que gere apenas um warning, mesmo que a aplicação não pare, atente-se ao erro, pois pode estar comprometendo suas regras de negócio

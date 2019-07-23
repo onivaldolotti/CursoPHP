@@ -1,0 +1,20 @@
+Vimos a DivisionByZeroError, sempre que notarmos um trecho que gere uma exception, veja na documentação do php, se já existe uma Exception adequada a seu cenário.
+
+Colocar o cálculo em um bloco try e testar se o valor do divisor é igual a zero. Caso seja, lançar uma exceção do tipo DivisionByZeroError e capturá-la em um bloco catch.
+
+try{
+    if(self::$totalContasCriadas < 1) {
+        throw new \DivisionByZeroError("nao é possivel realizar divisao por 0");
+    }
+    self::$taxaOperacao = (30 / self::$totalContasCriadas);
+    }catch(\DivisionByZeroError $error) {
+        echo $error->getMessage()."<br>";
+        exit;
+    }
+Dessa forma, caso tenha problema com a divisão por zero, lançaremos adequadamente a exceção DivisionByZeroError.
+
+O que aprendemos?
+
+-Conhecendo uma exceção;
+-Bloco try;
+-Bloco catch.

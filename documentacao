@@ -1,5 +1,19 @@
 https://www.php.net/manual/en/errorfunc.constants.php - niveis de erros
+
 https://php.net/manual/en/language.types.string.php - documentacao String
+
 https://www.php.net/manual/pt_BR/book.mbstring.php - extensoes
+
 https://www.php.net/manual/en/language.references.php - referencias
+
 https://www.php.net/manual/pt_BR/language.oop5.magic.php - metodos magicos do php
+
+https://www.php.net/manual/pt_BR/language.exceptions.php - exceptions
+
+https://www.php.net/manual/en/spl.exceptions.php - exceptions
+
+https://php.net/manual/en/function.date.php - funcao date
+
+https://secure.php.net/manual/pt_BR/class.datetime.php - classe datitime
+
+https://getcomposer.org/doc/articles/scripts.md - composer scripts

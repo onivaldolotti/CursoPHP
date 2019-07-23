@@ -1,0 +1,23 @@
+podemos ter em um bloco try + de 1 catch. Assim tratamos mais de 1 Exception.
+
+-Um bloco try pode ter mais de um bloco catch. Se fizermos dessa forma, podemos adicionar um catch para a InvalidArgumentException, onde adicionaremos o envio do email e nos demais apenas adicionaremos a mensagem ao usuário.
+
+<?php
+try{
+    $contaJoao = new ContaCorrente("Joao","1212","343477-9",100.00);
+    $contaJoao->sacar(10,00);
+}catch(\InvalidArgumentException $e){
+    echo $e->getMessage();
+    enviarEmailParacentral();
+}catch(\Exception $e){
+    echo $e->getMessage();
+}
+?>
+
+-Um bloco try pode ter quantas tratativas for necessário, o ideal é que o catch com a classe \Exception fique por ultimo, pois como ele captura todas as exceções e uma vez que sai em um catch, o outro não é executado.
+
+
+O que aprendemos?
+
+-Tratamento de várias exceções;
+-Exceções pré-definidas.

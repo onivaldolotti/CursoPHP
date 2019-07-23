@@ -1,0 +1,11 @@
+Comandos executados através do comando composer faz com que os comandos consumam menos memória pois o Composer é muito leve
+	-Podemos digitar um comando simples para executar uma tarefa complexa, onde vários parâmetros podem ser informados
+	-Separando um script no composer.json podemos dar um nome simples para um comando grande. Isso evita que esqueçamos algum parâmetro importante de algum comando. :-D
+
+Nesta aula, aprendemos:
+
+	-scripts são definidos dentro do composer.json;
+	-scripts podem definir comandos que chamam ferramentas instaladas pelo Composer;
+	-scripts podem chamar comandos do sistema operacional;
+	-scripts podem chamar códigos PHP;
+	-scripts podem ser associados ao evento.

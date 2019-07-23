@@ -1,0 +1,29 @@
+https://blog.alura.com.br/manipulando-datas-e-horarios-com-php/#disqus_thread
+
+funcao date --------------------------------
+y minusculo para data com 2 digitos no ano.
+
+$hoje = date('d/m/Y');
+echo $hoje; //Gera uma String
+
+funcao date com hora e minutos ------------------------------
+
+$agora = date('d/m/Y H:i');
+echo $agora;
+
+utilizando a classe datetime --------------------
+
+$agora = new DateTime(); // Pega o momento atual
+echo $agora->format('d/m/Y H:i'); // Exibe no formato desejado
+
+-Caso a gente não passe nenhum parâmetro para o construtor de DateTime, o momento atual será recuperado. Podemos ainda passar uma string informando o momento que queremos, por exemplo:
+<?php
+$agora = new DateTime('now');
+$ontem = new DateTime('yesterday');
+$dia15 = new DateTime('2019-03-15');
+
+-Se já tivermos uma string em outro formato, e quisermos criar um objeto do tipo DateTime, podemos utilizar o método createFromFormat, da seguinte forma:
+<?php
+$formato = 'd/m/Y';
+$stringDataDia15 = '15/03/2019';
+$dia15 = DateTime::createFromFormat($formato, $stringDataDia15);

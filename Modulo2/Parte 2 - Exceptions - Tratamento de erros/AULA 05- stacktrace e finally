@@ -1,0 +1,28 @@
+-Podemos garantir que nosso arquivo será devidamente fechado independente de termos ou não uma exceção lançada na transferência, adicionando o bloco finally após o bloco catch, pois independente de ter uma exceção capturada, o bloco finally será executado.
+
+public function transferir($valor, ContaCorrente $contaCorrente){
+    try{
+    $arquivo = new LeitorArquivo("logTransferencia.txt");
+    $arquivo->abrirArquivo();
+    $arquivo->escreverNoArquivo();
+    Validacao::verificaNumerico($valor);
+    Validacao::verificaValorNegativo($valor);
+    $this->sacar($valor);
+    $contaCorrente->depositar($valor);
+
+    return $this;
+
+    }catch(\Exception $e){
+        ContaCorrente::$operacaoNaoRealizada ++;
+        throw new exception\OperacaoNaoRealizadaException("Operação não realizada", 55,$e);
+    }finally{
+        $arquivo->fecharArquivo();
+    }
+}
+
+-Códigos dentro de finally sempre serão executados depois do try ou catch, independentemente se houve o lançamento de uma exceção, e antes que a execução normal continue.
+
+O que aprendemos?
+
+-Como analisar uma StackTrace;
+-Como utilizar o getPrevious();

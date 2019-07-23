@@ -1,0 +1,12 @@
+-Neste capítulo, além de entendermos o que é o Composer e como instalá-lo, vimos que existem algumas convenções para dar um nome a pacotes que criamos para distribuir. Uma das convenções é que o nome do pacote precisa começar com o Vendor Name.
+-O Vendor Name no nome do pacote distribuído com Composer é o nome da pessoa ou companhia que distribui o pacote.
+-Claro que não precisa ser o nome real. Pode ser o famoso nickname. Meu vendor name é cviniciussdias, por exemplo. O vendor name permite que 2 distribuidores de pacote tenham pacotes com nomes iguais. Ex.: cviniciussdias/json e anamaria/json. Para mais detalhes: https://packagist.org/about#naming-your-package
+
+Nesta aula, aprendemos:
+
+-Composer é um gerenciador de dependências PHP.
+-Ele guarda as dependências dentro do projeto.
+-Se quisermos uma dependência global, devemos usar o global command.
+-Um pacote sempre segue a nomenclatura: <vendor>/<name>.
+-As meta-informações de uma dependência ficam salvas no arquivo composer.json.
+-O comando composer init inicializa o composer.json.

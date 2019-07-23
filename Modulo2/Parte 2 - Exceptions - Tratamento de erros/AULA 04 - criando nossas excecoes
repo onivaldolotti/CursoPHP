@@ -1,0 +1,6 @@
+Sempre que criar exceções customizadas, lembre de trata-las em um bloco catch, pois caso a exceção aconteça, receberá um fatal error em tela.
+
+O que aprendemos?
+
+-Como criar exceções customizadas;
+-Como enriquecer as exceções.
