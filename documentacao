@@ -17,3 +17,5 @@ https://php.net/manual/en/function.date.php - funcao date
 https://secure.php.net/manual/pt_BR/class.datetime.php - classe datitime
 
 https://getcomposer.org/doc/articles/scripts.md - composer scripts
+
+https://semver.org - controle de versao com tag
