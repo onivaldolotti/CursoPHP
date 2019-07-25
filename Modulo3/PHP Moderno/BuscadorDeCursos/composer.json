@@ -3,6 +3,7 @@
     "description": "Projeto que busca os cursos no site da Alura",
     "type": "library",
     "authors": [
+
         {
             "name": "onivaldolotti",
             "email": "onivaldo_lotti@outlook.com"

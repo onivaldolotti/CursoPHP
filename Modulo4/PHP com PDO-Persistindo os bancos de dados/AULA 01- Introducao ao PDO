@@ -1,0 +1,5 @@
+Nesta aula, aprendemos algumas coisas importantes para começar a trabalhar com o PDO do php. Agora, usando esses conhecimentos, vamos fazer uma simples página que vai:
+
+-Estabelecer uma conexão com o Banco de Dados;
+-Efetuar um SELECT no banco de dados na tabela Categorias;
+-Exibir o resultado desse SELECT usando a função print_r().
