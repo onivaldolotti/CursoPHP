@@ -1,0 +1,60 @@
+O método PDO::prepare(), assim como o PDO::query(), retorna um objeto do tipo PDOStatement, mas com a diferença que a query não é executada automaticamente.
+
+O objeto PDOStatement possui diversos métodos que podemos usar, em diferentes situações que podem ajudar. Vamos agora dar uma listada nas possibilidade que temos com esse objeto!
+
+PDOStatement::fetch
+Retorna a próxima linha de um resultset. Podemos usar o método fetch, combinado por exemplo com um while() para buscar cada linha do resultado. Ele sempre começa na primeira linha do resultado de sua query e a cada vez que o método é chamado, ele vai para a próxima linha. Quando chega na ultima linha, o método retorna um valor false.
+
+Veja um exemplo de um SELECT em nossa tabela de produtos com isso:
+
+<?php
+
+require_once 'global.php';
+
+$conexao = Conexao::pegarConexao();
+$query = "SELECT nome FROM produtos";
+$stmt = $conexao->prepare($query);
+$stmt->execute();
+$row = $stmt->fetch();
+
+while ($row) {
+    echo 'Produto:' . $row['nome'] . '<br>';
+    $row = $stmt->fetch();
+}
+
+PDOStatement::fetchObject()
+O fetchObject() funciona de forma muito parecida com o método fetch(), mas com a diferença simples de que, o retorno não vai ser um array onde, cada indice representa uma coluna na entidade e sim, um objeto, onde, cada atributo representa a entidade.
+
+Veja o mesmo exemplo com a aplicação de PDOStatement::fetchObject():
+
+<?php
+
+require_once 'global.php';
+
+$conexao = Conexao::pegarConexao();
+$query = "SELECT nome FROM produtos";
+$stmt = $conexao->prepare($query);
+$stmt->execute();
+$row = $stmt->fetchObject();
+
+while ($row) {
+    echo 'Produto:' . $row->nome . '<br>';
+    $row = $stmt->fetchObject();
+}
+
+PDOStatement::rowCount
+Sempre que usamos uma instrução SQL do tipo INSERT, UPDATE ou DELETE, não teremos um resultset, Mas, temos um retorno do Banco de Dados com a quantidades de linhas que foram afetadas pelo nosso script. E esse método justamente retorna isso para nós. Veja o exemplo abaixo:
+
+<?php
+
+require_once 'global.php';
+
+$novo_preco = 11;
+
+$conexao = Conexao::pegarConexao();
+$query = "UPDATE produtos SET preco = :preco";
+$stmt = $conexao->prepare($query);
+$stmt->bindValue(':preco', $novo_preco);
+$stmt->execute();
+echo $stmt->rowCount() . ' Linhas atualizadas!';
+E temos o seguinte resultado: 13 Linhas atualizadas!.

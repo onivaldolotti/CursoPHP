@@ -1,0 +1,6 @@
+Criar um script SQL em uma string: $query = "SELECT ....."
+Efetuar a conexão: $conexao = Conexao::pegarConexao();
+Preparar a query em um Statement: $stmt = $conexao->prepare($query);
+Executar o script com o método execute() do Statement: $stmt->execute();
+
+-Quando usamos o método prepare() do PDO, nos é retornado uma variavel do tipo PDOStatement. Mas, esse statement ainda não foi rodado no banco de dados e podemos trabalhar na query para passar parâmetros por exemplo. Alem disso, se fomos executar mais de uma vez a mesma query (mudando ou não os parâmetros), ela acaba sendo otimizada pelo banco de dados que já sabe a estrutura do seu script.

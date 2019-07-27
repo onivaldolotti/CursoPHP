@@ -9,7 +9,7 @@ class Erro
             print_r($e);
             echo '</pre>';
         }else {
-            echo $e->getMessage();
+            include 'erro.php';
         }
         exit;
 	}
