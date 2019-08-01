@@ -1,0 +1,20 @@
+-criacao do diretorio Entity e da classe Aluno
+
+-definir os atributos e gerar getter e setters
+
+- anotacao Entity, mapeando assim para o Doctrine
+
+- anotacao da colunas
+
+- criacao do diretorio commands e o arquivo criar-Aluno
+
+-chamar nosso entityManager e atraves dos comando persist e flush inserir um aluno na DB
+
+Nesta aula, aprendemos:
+
+Como implementar uma entidade
+A anotação @Entity
+Com funcionam as anotações @Id, @GeneratedValue e @Column
+A implementar o arquivo que faz a linha de comando do Doctrine funcionar
+Como cria o schema do banco de dados
+Como inserir uma entidade no banco

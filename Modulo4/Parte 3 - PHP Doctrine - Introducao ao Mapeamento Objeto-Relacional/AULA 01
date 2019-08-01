@@ -1,0 +1,13 @@
+- Download do doctrine pelo composer
+- criacao do diretorio raiz src
+- configuracao da classe EntityManager
+- criacao do diretorio var/data
+- configuracao do autoload no composer
+
+Nesta aula, aprendemos:
+
+As configurações iniciais do ambiente para o treinamento
+Uma introdução ao Doctrine ORM
+projeto do treinamento
+Como instalar o Doctrine ORM
+Como implementar um gerenciador de entidades, para criar uma conexão com o banco de dados
