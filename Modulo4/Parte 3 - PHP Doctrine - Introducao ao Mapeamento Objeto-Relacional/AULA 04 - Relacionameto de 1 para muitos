@@ -1,0 +1,16 @@
+
+Neste último vídeo, nós conhecemos o componente de migrations do Doctrine, que nos ajuda a versionar o banco de dados (acompanhar suas modificações)
+
+Quais são algumas das vantagens de utilizar migrations?
+-Possibilidade de reverter as alterações
+-As migrations criadas já carregam com si uma forma de reverter as alterações realizadas.
+-Sincronização com o restante da equipe
+-É muito mais simples sua equipe rodar uma nova migration do que recriar todo o banco novamente a cada alteração.
+
+instalando migrations no composer require doctrine/migrations
+vendor\bin\doctrine-migrations migratons:diff
+vendor\bin\doctrine-migrations migratons:migrate
+
+criamos o arquivo migrations.php na raiz e configuramos de acordo com a documentacao no site https://www.doctrine-project.org/projects/doctrine-migrations/en/2.1/reference/configuration.html
+
+Excluimos o banco e geramos ou diff, para incluir todas os dados do banco.

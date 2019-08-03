@@ -1,0 +1,5 @@
+inserir alunos pela prompt -> passando como parametro no $argv[1]
+
+buscar o repositorio da classe com o Entity manager, atraves do metodo->getRepository
+
+metodos de buscas padrao do getRepository -> find; findAll; findBy; findOneBy;

@@ -3,6 +3,7 @@
 - configuracao da classe EntityManager
 - criacao do diretorio var/data
 - configuracao do autoload no composer
+-criamos o banco com o doctrine ->vendor\bin\doctrine.bat list ->vendor\bin\doctrine.bat orm:schema-tool:create
 
 Nesta aula, aprendemos:
 
