@@ -1,0 +1,17 @@
+Nesta aula, aprendemos:
+
+Conhecemos o padrão arquitetural MVC
+
+MVC define 3 camadas:
+
+Modelo: Classes com a lógica de negócio e persistência
+
+View: Arquivos com o código HTML
+
+Controller: Classes que ligam o Model e View
+
+Vimos também que existe um FrontController (também chamado de Dispatcher)
+
+Ele representa a entrada da aplicação e recebe todas as requisições
+
+Ele decide qual controller específico a usar

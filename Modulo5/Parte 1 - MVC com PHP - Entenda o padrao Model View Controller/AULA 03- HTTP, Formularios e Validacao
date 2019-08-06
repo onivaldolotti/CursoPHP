@@ -1,0 +1,11 @@
+Nesta aula, aprendemos:
+
+Para ler os dados enviados da requisição existem variáveis "super globais" como $_REQUEST, $_POST e $_GET
+Para validar e limpar os dados da requisição podemos usar a função filter_input
+Existem diversos filters já prontos
+Também existe a função `filter_var' para aplicar filtros em qualquer variável
+Mais filtros no link: https://www.php.net/manual/pt_BR/book.filter.php
+Vimos como trabalhar com cabeçalhos no mundo PHP
+Podemos usar a função genérica 'header' mas também específicos como http_response_code
+Vimos como funciona o redirecionamento, isto é, chamar automaticamente uma nova URL pelo navegador
+Para tal o servidor precisa devolver o cabeçalho Location para o navegador usando a função header
