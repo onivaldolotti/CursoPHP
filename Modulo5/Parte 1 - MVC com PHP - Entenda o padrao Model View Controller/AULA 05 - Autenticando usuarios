@@ -1,0 +1,6 @@
+Nesta aula, aprendemos:
+
+Como gerar uma senha segura usando o algoritmo ARGON2I
+Usar no código PHP a função password_verify($senhaPura, $senhaHash)
+Como inserir dados com Doctrine através de SQL
+Como validar um email usando a função filter_input (FILTER_VALIDATE_EMAIL)

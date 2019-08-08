@@ -1,0 +1,8 @@
+Nesta aula, aprendemos:
+
+A função isset(..) para testar se uma variável existe
+A função extract(..) que recebe um array associativo e define variáveis para cada chave
+Podemos ativar a buffer de saída do buffer com o ob_start()
+O método ob_get_contents() devolve conteúdo do buffer
+O método ob_clean() limpa o buffer
+O método ob_get_clean devolve conteúdo e limpa o buffer

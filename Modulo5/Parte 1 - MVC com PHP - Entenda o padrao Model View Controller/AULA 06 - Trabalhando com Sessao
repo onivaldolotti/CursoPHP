@@ -1,0 +1,10 @@
+Nesta aula, aprendemos:
+
+Por padrão o servidor não guarda informações ou dados entre requisições
+Isto é principalmente por causa do protocolo HTTP que é stateless (sem manter estado)
+Para armazenar dados entre requisições precisamos usar uma SESSION (sessão)
+Uma session tem um ID (PHPSESSID) associado que fica salvo dentro de um arquivo de texto chamado Cookie
+O Cookie por sua vez fica salvo no navegador
+O navegador automaticamente envia o cookie em cada requisição
+Uma sessão precisa ser inicializada explicitamente no PHP pelo comando session_start()
+session_start() precisa ser chamada antes de qualquer saída
