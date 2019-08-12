@@ -1,0 +1,7 @@
+Nesta aula, aprendemos:
+
+A modelagem do banco de dados SQLite
+Como criar o schema do banco de dados, utilizando as migrations
+Como inserir as séries no banco, utilizando Eloquent
+Como buscar as séries salvas no banco e exibi-las na view
+As decisões de arquitetura do Eloquent

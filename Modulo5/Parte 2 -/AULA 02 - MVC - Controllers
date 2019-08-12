@@ -1,0 +1,5 @@
+Nesta aula, aprendemos:
+
+O padrão arquitetural MVC
+Como alterar a rota, para ser direcionada ao controller
+A injeção de dependências do Laravel, recebendo o Request no método index do controller

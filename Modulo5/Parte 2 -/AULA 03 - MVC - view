@@ -1,0 +1,8 @@
+Nesta aula, aprendemos:
+
+A criar a view de exibição das séries, misturando HTML e PHP
+Como estilizar a página de exibição das séries, através do Bootstrap
+A criar a view para adicionar séries
+O problema de código duplicado
+Como criar um layout para os arquivos de View, com o Blade
+Como mudar os arquivos de View para utilizar o Blade

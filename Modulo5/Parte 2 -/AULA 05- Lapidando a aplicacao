@@ -1,0 +1,9 @@
+Nesta aula, aprendemos:
+
+A redirecionar o usuário após uma série ser inserida
+Como ordenar as séries pelo seu nome
+A acessar a sessão do PHP
+A adicionar uma flash message na sessão
+Como remover uma série
+Inclusive adicionando um botão de exclusão, com uma mensagem de confirmação
+Como dar nomes para as rotas e referenciá-las através desses nomes
