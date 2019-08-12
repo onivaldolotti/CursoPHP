@@ -1,0 +1,11 @@
+Nesta aula, aprendemos:
+
+Existem vários padrões definidos através de PSRs (PHP Standard Recommendations)
+A organização PHP-FIG (Framework Interoperability Group) sugere e mantém a especificação destes padrões;
+Site do PHP-FIG é https://www.php-fig.org/
+Seguindo as PSRs aumentamos a compatibilidade do nosso código entre frameworks e bibliotecas;
+Vimos as seguinte PSRs:
+PSR-4: Autoloading
+PSR-7: HTTP message interfaces
+PSR-11: Container interface
+PSR-15: HTTP Server Request Handlers
