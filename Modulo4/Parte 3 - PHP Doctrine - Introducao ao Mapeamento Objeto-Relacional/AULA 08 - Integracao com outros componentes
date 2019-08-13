@@ -1,0 +1,7 @@
+Nesta aula, aprendemos como criar efetivamente os objetos em um relacionamento usando o ORM Eloquent. Por exemplo, para criar uma temporada a partir da série, usamos:
+
+$temporada = $serie->temporadas()->create(['numero' => 1]);
+Analogamente, criamos um episódio a partir da temporada:
+
+$temporada->episodios()->create(['numero' => 1]);
+Além disso, preparamos toda a interface web, para trabalhar com temporadas e episódios. Na próxima aula vem mais!
