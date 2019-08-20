@@ -3,9 +3,10 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Serie;
+use App\{Serie, Temporada, Episodio};
 use App\Http\Requests\SeriesFormRequest;
 use App\Services\CriadorDeSeries;
+use App\Services\RemovedorDeSeries;
 
 class SeriesController extends Controller
 {
@@ -37,10 +38,19 @@ class SeriesController extends Controller
 		// $serie->save();
 	}
 
-	public function destroy(Request $request)
+	public function destroy(Request $request, RemovedorDeSeries $removedorDeSerie)
 	{
-		Serie::destroy($request->id);
-		$request->session()->flash('mensagem', "Serie removida com sucesso");
+		$nomeSerie = $removedorDeSerie->removerSerie($request->id);
+
+		$request->session()->flash('mensagem', "Serie $nomeSerie removida com sucesso");
 		return redirect()->route('listar_series');
+	}
+
+	public function editaNome(int $id, Request $request)
+	{
+		$novoNome = $request->nome;
+		$serie = Serie::find($id);
+		$serie->nome = $novoNome;
+		$serie->save();
 	}
 }

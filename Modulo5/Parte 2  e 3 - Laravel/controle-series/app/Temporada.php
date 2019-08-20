@@ -4,6 +4,7 @@ namespace App;
 
 use Illuminate\Database\Eloquent\Model;
 use App\Episodio;
+use App\Serie;
 
 class Temporada extends Model
 {

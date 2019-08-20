@@ -1,0 +1,28 @@
+Nesta aula, aprendemos como criar classes auxiliares. Esses classes podem ser criadas na pasta Provider ou Helpers, no nosso exemplo usamos a pasta Services. É boa prática encapsular regras mais complexas dentro de classes.
+
+Além disso, você pode injetar algum objeto dessas classes no método do controller:
+
+class SeriesController extends Controller
+{
+
+    // outro código omitido
+
+    public function store(
+        SeriesFormRequest $request,
+        CriadorDeSerie $criadorDeSerie //passando a instancia
+    ) {
+
+        //outro código omitido
+
+    }
+}
+Por fim, aprendemos como lidar com transações no Laravel. As transações garantem que todos os comandos enviados são executados de uma vez (ou desfeito de uma vez só). No Laravel, basta usar a classe fachada DB para abrir e consolidar a transação:
+
+DB::beginTransaction();
+//código que altera o modelo
+DB:commit()
+Alternativamente, podemos usar o método DB::transaction(..), que recebe uma função anônima:
+
+DB::transaction(function () use (&$variavel1) {
+    //código transacional
+});

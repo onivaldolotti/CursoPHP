@@ -3,6 +3,7 @@
 namespace App\Services;
 
 use App\Serie;
+use Illuminate\Support\Facades\DB;
 
 class CriadorDeSeries
 {
@@ -10,6 +11,7 @@ class CriadorDeSeries
 	{
 		//$nome = $request->nome;
 		//$serie = Serie::create(['nome'=>$nome]);
+		DB::beginTransaction();
 		$serie = Serie::create(['nome' => $nome]);
 
 		for ($i=1; $i <= $qtd_temporadas ; $i++) {
@@ -19,7 +21,7 @@ class CriadorDeSeries
 				$temporada->episodios()->create(['numero'=>$j]);
 			}
 		}
-
+		DB::commit();
 		return $serie;
 	}
 }
