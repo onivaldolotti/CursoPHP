@@ -1,0 +1,9 @@
+Nessa aula, aprendemos:
+
+Como gerar e executar uma migration para adicionar uma nova coluna na tabela
+Como trabalhar com checkboxes e um array de checkboxes no Laravel
+Que podemos usar redirect->back() para voltar para última página
+Que podemos enviar o ID de um modelo na requisição e no controller recebemos o objeto
+Como incluir uma view em outra, através de sub-views
+Para tal usamos @include(...) e @includeWhen(...), por exemplo:
+@include('mensagem', ['mensagem' => $mensagem])

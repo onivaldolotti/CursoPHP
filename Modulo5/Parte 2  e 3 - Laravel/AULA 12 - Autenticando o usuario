@@ -1,0 +1,10 @@
+Nessa aula, aprendemos:
+
+Que o Laravel já vem preparado para trabalhar com autenticação, bastando executar make:auth
+Existem rotas (como /login ou /logout), páginas e controllers (HomeController) já prontos para serem utilizados
+Que existem várias formas de proteger as rotas
+No método do controller, usando if
+No arquivo web.php, chamando ->middleware('auth')
+No construtor da classe controller, usando $this->middleware('auth');
+No arquivo kernel.php, no atributo $middlewareGroups
+Que a forma a ser utilizada, depende da sua necessidade
