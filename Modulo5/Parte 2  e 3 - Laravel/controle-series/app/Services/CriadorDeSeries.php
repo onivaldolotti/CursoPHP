@@ -17,7 +17,7 @@ class CriadorDeSeries
 		for ($i=1; $i <= $qtd_temporadas ; $i++) {
 			$temporada= $serie->temporadas()->create(['numero'=>$i]);
 
-			for ($j=1; $j <$ep_por_temporada; $j++) {
+			for ($j=1; $j <=$ep_por_temporada; $j++) {
 				$temporada->episodios()->create(['numero'=>$j]);
 			}
 		}

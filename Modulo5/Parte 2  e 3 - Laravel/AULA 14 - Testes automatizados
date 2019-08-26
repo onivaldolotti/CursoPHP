@@ -1,0 +1,12 @@
+Nessa aula, aprendemos que:
+
+Através de testes, garantimos a qualidade do nosso código
+Testes executáveis agilizam e automatizam o controle de qualidade
+O Laravel já vem preparado para escrever e rodar testes (existe uma pasta dedicada para testes, que integra com o PHPUnit)
+Ao executar os testes, recebemos um relatório sobre o status
+Para os testes que usam o banco, devemos usar um banco dedicado (por exemplo, em memória)
+O Laravel já possui uma trait para atualizar o banco especificamente criado para testes
+Devemos ter alguns cuidados na hora do deploy da aplicação
+O comando composer install é utilizado para baixar todas as dependências do projeto
+O comando php artisan key:generate gera uma nova chave para criptografar os dados sensíveis
+No arquivo .env, a propriedade APP_ENV deve ser prod e APP_DEBUG deve ser false

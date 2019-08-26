@@ -1,0 +1,9 @@
+Nessa aula, aprendemos:
+
+Como definir uma rota de logout (chamando Auth::lougout())
+Como definir um menu de navegação (usando o elemento nav do HTML e as classes do Bootstrap)
+Como verificar na view se o usuário está logado ou não
+Você pode usar a diretiva @auth para mostrar o conteúdo apenas para usuários logados
+Você pode usar a diretiva @guest para mostrar o conteúdo para usuários não logados
+Que um middleware é uma espécie de filtro ou interceptador
+Através dele, é possível executar um código para várias rotas (antes ou depois)

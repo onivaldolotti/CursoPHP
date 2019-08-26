@@ -19,13 +19,13 @@ class EpisodiosController extends Controller
 
 	public function assistir(Temporada $temporada, Request $request)
 	   {
-		   $episodiosAssistidos = $request->episodios;
+		   $idsEpisodiosAssistidos = array_keys($request->episodio);
 		   $temporada->episodios->each(function (Episodio $episodio)
-		   use ($episodiosAssistidos)
+		   use ($idsEpisodiosAssistidos)
 		   {
 			   $episodio->assistido = in_array(
 				   $episodio->id,
-				   $episodiosAssistidos
+				   $idsEpisodiosAssistidos
 			   );
 		   });
 
