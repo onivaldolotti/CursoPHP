@@ -1,0 +1,8 @@
+Nesta aula, aprendemos que:
+
+REST é um padrão arquitetural, que define regras como acessar/publicar um recurso
+O padrão arquitetural REST aproveita o máximo do protocolo HTTP
+Usamos as URLs, métodos, cabeçalhos e códigos para definir o acesso
+Através do objeto Illuminate\Http\Request, podemos ler os dados em JSON
+Através do método response(), podemos definir a resposta JSON e o código de resposta
+O código 201 significa Created, 204 significa No Content e 404 significa Not Found

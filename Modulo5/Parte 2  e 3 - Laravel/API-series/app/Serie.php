@@ -1,16 +1,23 @@
 <?php
 namespace App;
 
-use App\Episodio;
 use Illuminate\Database\Eloquent\Model;
 
 class Serie extends Model
 {
 	public $timestamps = false;
 	protected $fillable = ['nome'];
+	protected $appends = ['links'];
 
 	public function episodios()
 	{
 		return $this->hasMany(Episodio::Class);
+	}
+	public function getLinksAttribute(): array
+	{
+		return[
+			'self' => '/api/series/'.$this->id,
+			'episodios'=>'/api/series/'.$this->id.'/episodios'
+		];
 	}
 }

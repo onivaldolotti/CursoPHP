@@ -1,0 +1,11 @@
+Nesta aula, aprendemos que:
+
+É comum usar query params para definir o número da página e a quantidade de elementos por página
+O Eloquent já vem preparado para a paginação e possui um método paginate(..)
+A quantidade de itens por página pode ser definida na URL ou no próprio modelo ($perPage)
+Ao usar a paginação do Eloquent, o Laravel já devolve mais informações sobre a paginação (quantidade, primeira e última página, etc)
+Recursos podem ter sub-recursos, para reforçar o relacionamento
+A apresentação do recurso pode fornecer informações, como navegar para o sub-recurso
+Normalmente é usado o atributo link para navegar ao sub-recurso
+Linkar recursos e navegar entre eles faz parte de um conceito do padrão REST, chamado de HATEOAS
+HATEOAS significa Hipermídia como o mecanismo/motor do estado do aplicativo (Hypermedia As The Engine Of Application Stat)

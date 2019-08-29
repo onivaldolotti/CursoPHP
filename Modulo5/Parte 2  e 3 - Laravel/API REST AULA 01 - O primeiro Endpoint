@@ -1,0 +1,9 @@
+Nesta aula, aprendemos que:
+
+Uma API devolve dados através do protocolo HTTP, muito usado para atender aplicações mobile ou desktop
+Podemos criar uma API com Laravel, e as rotas da API ficam no arquivo api.php
+O Laravel usa o prefixo /api nas rotas da API
+Uma coleção do Eloquent retornada no método no Controller se torna um JSON
+O Lumen é uma versão leve do Laravel específica para a criação de uma API
+Podemos agrupar rotas para definir características comuns (por exemplo, prefixo)
+O Eloquent fica desabilitado por padrão no Lumen, e podemos habilitá-lo no arquivo bootstrap/app.php

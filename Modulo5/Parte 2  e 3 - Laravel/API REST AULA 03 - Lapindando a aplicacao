@@ -1,0 +1,7 @@
+Nesta aula, aprendemos que:
+
+As rotas podem ter grupos (como já vimos) e sub-grupos para não repetir nenhuma configuração
+A herança pode ser utilizada para reutilizar código entre controllers
+O ORM Eloquent possui Accessors e Mutators, para personalizar a forma de como os atributos são preenchidos e devolvidos
+Para personalizar o accessor, podemos implementar o método getNomeDoSeuAtributoAttribute($valor)
+Para personalizar o mutator, podemos implementar o método setNomeDoSeuAtributoAttribute($valor)
