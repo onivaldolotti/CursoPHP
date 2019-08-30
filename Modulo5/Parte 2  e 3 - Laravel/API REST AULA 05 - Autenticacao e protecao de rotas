@@ -1,0 +1,9 @@
+Nesta aula, aprendemos que:
+
+Normalmente uma API não guarda dados da sessão do usuário
+É muito comum que uma API autentique o usuário através de um token
+Um token é uma identificação (parecido com session id)
+JWT (JSON Web Token) é um padrão para definir o token
+No Lumen, já existe um providor de autenticação (AuthServiceProvider)
+O Lumen também já fornece classes para representar o usuário (User e GenericUser)
+O Lumen também já possui provedores de autenticação e middleware para proteger as rotas
