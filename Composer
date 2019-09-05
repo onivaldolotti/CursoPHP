@@ -1,0 +1,28 @@
+composer init
+
+->vendor/name = Nome de usuario do github(mais comum)/ Nome do projeto
+
+-> descricao do projeto
+
+->Author = usuario e email do github
+
+->Minimum Stability = pacote estavel ou instavel(dipensavel no momento)
+
+->Package Type = tipos dos projetos
+
+->licenca do codigo = pesquisar as licencas
+
+
+ Autoloader ------------------------------------------
+
+"autoload": {
+        "psr-4": {
+            "Alura\\SOLID\\": "src/"
+        }
+    }
+
+->require 'vendor/autoload.php';
+
+->composer dumpautoload
+
+->classmap para arquivos de fora do projeto -------------->

@@ -8,6 +8,9 @@ class TocadorDeMusica {
     public function __construct() {
         $this->musicas = new SplDoublyLinkedList();
         $this->historico = new SplStack();
+        $this->filaDeDownloads = new SplQueue();
+        $this->musicas->rewind();
+        $this->ranking = new Ranking();
     }
 
     public function adicionarMusicas(SplFixedArray $musicas) {
@@ -25,6 +28,7 @@ class TocadorDeMusica {
         }else {
             echo "Tocando musica: ".$this->musicas->current()."<br>";
             $this->historico->push($this->musicas->current());
+            $this->musicas->current()->tocar();
         }
     }
 
@@ -71,4 +75,31 @@ class TocadorDeMusica {
     public function tocarUltimaMusicaTocada() {
         echo "Tocando do historico: ". $this->historico->pop(). "<br>";
     }
+
+    public function baixarMusicas() {
+
+        if($this->musicas->count() >0){
+            for($this->musicas->rewind(); $this->musicas->valid(); $this->musicas->next()) {
+                $this->filaDeDownloads->push($this->musicas->current());
+            }
+
+            for($this->filaDeDownloads->rewind(); $this->filaDeDownloads->valid(); $this->filaDeDownloads->next()) {
+                echo "Baixando: ".$this->filaDeDownloads->current()."<br>";
+            }
+        }else {
+            echo "Nenhuma musica para baixar";
+        }
+    }
+
+    public function exibeRanking() {
+        foreach($this->musicas as $musica) {
+            $this->ranking->insert($musica);
+        }
+
+        foreach ($this->ranking as $musica) {
+            echo $musica->getNome() . " - " . $musica->getVezesTocada(). "<br>";
+        }
+    }
+
+
 }

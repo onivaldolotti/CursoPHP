@@ -1,7 +1,6 @@
 <?php
 
 require 'TocadorDeMusica.php';
-require 'Musica.php';
 
 $musicas = new SplFixedArray(4);
 
@@ -14,12 +13,4 @@ $tocador = new TocadorDeMusica();
 
 $tocador-> adicionarMusicas($musicas);
 
-$tocador->avancarMusica();
-
-$tocador->tocarMusica();
-
-$tocador->avancarMusica();
-$tocador->avancarMusica();
-
-$tocador->tocarUltimaMusicaTocada();
-
+$tocador->baixarMusicas();

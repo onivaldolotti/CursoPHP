@@ -1,0 +1,12 @@
+{
+    "name": "onivaldolotti/solid",
+    "description": "curso de SOLID da Alura",
+    "type": "project",
+    "require": {},
+
+    "autoload": {
+        "psr-4": {
+            "Alura\\Solid\\": "src/"
+        }
+    }
+}
