@@ -6,7 +6,7 @@
 
     "autoload": {
         "psr-4": {
-            "Alura\\Solid\\": "src/"
+            "Alura\\Solid\\": ["src/", "src/aula02", "src/aula03"]
         }
     }
 }

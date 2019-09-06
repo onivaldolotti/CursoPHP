@@ -17,6 +17,8 @@ class ComposerStaticInitc3585b9aefe7cbb4b06a708f07dbefcb
         'Alura\\Solid\\' => 
         array (
             0 => __DIR__ . '/../..' . '/src',
+            1 => __DIR__ . '/../..' . '/src/aula02',
+            2 => __DIR__ . '/../..' . '/src/aula03',
         ),
     );
 
