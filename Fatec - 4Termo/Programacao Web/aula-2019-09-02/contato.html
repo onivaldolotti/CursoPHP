@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Curso de Java</title>
+	</head>
+	<body>
+		<header>
+			<!-- <img src="" alt="Logo do Java"> -->
+			<h1>Formúlario de Contato</h1>
+
+		</header>
+		<form action enviar_email.php method="POST">
+			<div>
+				<label for="nome">Seu nome:</label>
+				<input type="text" id="nome" name="nome"required/>
+			</div>
+			<div>
+				<label for="email">E-mail de contato:</label>
+				<input type="email" id="email" name="email" required/>
+			</div>
+			<div>
+				<label for="mensagem">Sua mensagem:</label>
+				<textarea id="mensagem" name="mensagem" rows="4" cols="60" required></textarea>
+			</div>
+			<button type="submit">Enviar</button>
+		</form>
+		<footer>&copy;<a href="http://www.fatecgarca.edu.br" target="_blank"a> Fatec Garca</footer>
+	</body>
+</html>

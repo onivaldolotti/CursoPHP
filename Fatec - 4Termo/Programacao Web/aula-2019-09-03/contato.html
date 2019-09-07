@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8">
+		<title>Curso de Java</title>
+		<style>
+			/* Estilos para o formulario como um todo */
+			form {
+				/* Borda de 2px solida na cor preta*/
+				border: 2px solid black;
+				/* Largura fixa de 700px para o formulario */
+				width: 700px;
+				/* Centralizar conteudo de elemento na tela*/
+				margin: 0px auto;
+				/* MArgem interna de 16px */
+				padding: 16px;
+				/*arredonda a borda*/
+				border-radius: 20px;
+				/*sombreado deslocamento eixo x, y, borrao, cor */
+				box-shadow: 10px 10px 10px lightgrey;
+			}
+
+			/* Estilo para o titulo h1 */
+			h1 {
+				/* Texto centralizado*/
+				text-align: center;
+				/* fonte para o texto */
+				font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+			}
+
+			/* Estilo para os rotulos do texto */
+			label {
+				/* Alteramos os rotulos para blocos redimensionais */
+				display: inline-block;
+				/* Definimos uma largura fixa para os rotulos */
+				width: 150px;
+				/* trocamos a fonte do label */
+				font-family: Arial, Helvetica, sans-serif;
+				/* Aumentamos um pouco o tamanho(default: 16px) */
+				font-size: 18px;
+				/* Alinhamos os texto a direita */
+				text-align: right;
+			}
+
+			/* Estilo para os divs do formularios */
+			form div {
+				/* Margem no topo da div */
+				margin-top: 12px;
+			}
+
+			textarea {
+				/* Usada para manter o topo de textarea alinhado com o label */
+				vertical-align: top;
+			}
+			
+			/* Estilo para o botao */
+			button {
+				/* Mudamos ele para bloco para poder centralizar */
+				display: block;
+				/* Margem 0px auto faz a centralizacao horizontal */
+				margin: 12px auto;
+				/* LArgura em pixels */
+				width: 140px;
+				/* altura em pixels */
+				height: 40px;
+			}
+
+			/* Estilo para quando so campos recebem o curso (o "foco) */
+			input:focus, textarea:focus {
+				background-color: navajowhite;
+			}
+			footer {
+
+				position: absolute;
+				bottom: 0;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<!-- <img src="" alt="Logo do Java"> -->
+			<h1>Formúlario de Contato</h1>
+
+		</header>
+		<form action enviar_email.php method="POST">
+			<div>
+				<label for="nome">Seu nome:</label>
+				<input type="text" id="nome" name="nome"required/>
+			</div>
+			<div>
+				<label for="email">E-mail de contato:</label>
+				<input type="email" id="email" name="email" required/>
+			</div>
+			<div>
+				<label for="mensagem">Sua mensagem:</label>
+				<textarea id="mensagem" name="mensagem" rows="4" cols="60" required></textarea>
+			</div>
+			<button type="submit">Enviar</button>
+		</form>
+		<footer>&copy;<a href="http://www.fatecgarca.edu.br" target="_blank"a> Fatec Garca</footer>
+	</body>
+</html>

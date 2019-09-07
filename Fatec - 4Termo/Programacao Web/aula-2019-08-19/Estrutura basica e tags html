@@ -1,0 +1,43 @@
+tags(marcaçôes) para o corpo da página
+
+<header> cabeçalho
+
+<nav> barra de navegação
+
+<section> seções de conteúdo
+
+<footer> rodapé
+
+<p> parágrafo
+
+<br> quebra de linha
+
+<h1>
+.
+.
+.
+<h6> Titulos em destaque
+
+<img> imagens
+
+<a href=> links
+
+<strong> texto destacado
+
+Tabela ---------------------------
+<table>
+
+<tr> linha
+
+<td> célula
+
+Listas---------------------------
+<ol> lista ordenada
+
+<ul> Lista
+
+<li> Item de Lista
+---------------------------------
+<div> Divisão genérica da página
+
+<span> Divisão genérica de um texto
